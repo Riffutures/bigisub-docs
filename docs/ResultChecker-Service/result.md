@@ -28,7 +28,7 @@ data = json.dumps(payload)
 ### Send a post request with the payload
 
 ```python
-url = "https://bigisub.com/api/exam_pin_purchase/"
+url = "https://bigisub.ng/api/exam_pin_purchase/"
 res = requests.post(url, data=data, headers=headers)
 ```
 

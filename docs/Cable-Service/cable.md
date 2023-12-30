@@ -5,16 +5,11 @@ sidebar_position: 2
 # Cable Payment
 
 
-- `network`: Network Provider `int`
-  - 1: 'MTN'
-  - 2: 'GLO'
-  - 3: '9MOBILE'
-  - 4: 'AIRTEL'
-
-- `amount`: Your password `string`
-- `mobile_number`: Recipient number `string`
-- `airtime_type`: Airtime type `string`
-- `Port_number`: Port number default to **true** `string`
+- `card_no`: Card Number `string`
+- `phone_number`: Recipient phone number `string`
+- `cable_type`: Cable type `string`
+- `amount`: amount to buy `string`
+- `Customer`: Customer name `string`
 
 ```python
 import requests
@@ -37,7 +32,7 @@ data = json.dumps(payload)
 ### Send a post request with the payload
 
 ```python
-url = "https://bigisub.com/api/cable_purchase/"
+url = "https://bigisub.ng/api/cable_purchase/"
 res = requests.post(url, data=data, headers=headers)
 ```
 

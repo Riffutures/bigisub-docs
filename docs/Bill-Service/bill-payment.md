@@ -33,7 +33,7 @@ data = json.dumps(payload)
 ### Send a post request with the payload
 
 ```python
-url = "https://bigisub.com/api/meter_pay/"
+url = "https://bigisub.ng/api/meter_pay/"
 res = requests.post(url, data=data, headers=headers)
 ```
 

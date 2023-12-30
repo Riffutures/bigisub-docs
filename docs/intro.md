@@ -41,7 +41,7 @@ data = json.dumps(payload)
 ### Send a request with the payload
 
 ```python
-url = "https://bigisub.com/api/get_token/"
+url = "https://bigisub.ng/api/get_token/"
 res = requests.get(url, data=data)
 ```
 
