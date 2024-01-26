@@ -36,7 +36,7 @@ const Table = () => {
 
   const GetPlans = async () => {
     try {
-      const response = await fetch('https://fuzzy-engine-v66g774r5qp63xqvj-8000.app.github.dev/api/fetch_dataplans/')
+      const response = await fetch('https://bigisub.ng/api/v1/fetch_dataplans/')
       if (!response.ok) {
         throw new Error("Dataplans Fetch fails")
       }
@@ -126,11 +126,13 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <div className='mb-4'>
-          <h1 className='text-center text-3xl font-bold'>Available Data Plans</h1>
-        </div>
-        <Table />
       </main>
+      <div>
+      <div className='mb-4'>
+          <h1 className='text-center text-3xl font-bold'>Available Data Plans</h1>
+      </div>
+      <Table />
+      </div>
     </Layout>
   );
 }
